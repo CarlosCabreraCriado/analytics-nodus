@@ -80,7 +80,8 @@ USER 999
 WORKDIR /app
 
 ENV LISTEN_IP=0.0.0.0
-ENV DEFAULT_DATA_DIR=/var/lib/plausible
+#ENV DEFAULT_DATA_DIR=/var/lib/plausible
+ENV DEFAULT_DATA_DIR=/var/lib/containers/railwayapp/bind-mounts/d60cc166-3167-4f02-9fe6-7070b0536057/vol_rhwvuyjc3136xkx1
 
 ENTRYPOINT ["/entrypoint.sh"]
 EXPOSE 8000
