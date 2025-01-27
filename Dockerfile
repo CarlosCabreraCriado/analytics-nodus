@@ -74,7 +74,7 @@ COPY --chmod=755 ./rel/docker-entrypoint.sh /entrypoint.sh
 
 # we need to allow "others" access to app folder, because
 # docker container can be started with arbitrary uid
-RUN mkdir -p /var/lib/plausible && chmod ugo+rw -R /var/lib/plausible
+RUN mkdir -p /var/lib/containers/railwayapp/bind-mounts/d60cc166-3167-4f02-9fe6-7070b0536057/vol_rhwvuyjc3136xkx1 && chmod ugo+rw -R /var/lib/containers/railwayapp/bind-mounts/d60cc166-3167-4f02-9fe6-7070b0536057/vol_rhwvuyjc3136xkx1
 
 USER 999
 WORKDIR /app
